@@ -11,10 +11,10 @@ const uiCopy = {
       projects: 'Proyek',
       contact: 'Kontak',
     },
-    heroRole: 'Fullstack Developer || UI/UX Designer',
+    heroRole: 'IT Specialist',
     summaryTitle: 'Ringkasan',
     summaryText:
-      'Fullstack Developer dengan pengalaman 3+ tahun membangun aplikasi web yang scalable menggunakan Laravel, CodeIgniter, dan React.js. Berpengalaman dalam pengembangan REST API, microservices, perancangan database (MySQL/PostgreSQL), serta praktik DevOps seperti Docker dan CI/CD. Terbiasa menulis kode yang rapi, mudah dirawat, dan berkolaborasi dalam tim lintas fungsi.',
+      'IT Specialist dengan pengalaman dalam pengelolaan operasional IT, infrastruktur jaringan, sistem ERP, serta pengembangan aplikasi berbasis web. Berpengalaman menangani kebutuhan IT di 15 outlet yang tersebar di berbagai wilayah Indonesia, mencakup pengelolaan sistem back-office, POS, jaringan lokal, CCTV, serta pemeliharaan hardware dan software. Memiliki keahlian dalam Fullstack Development menggunakan Laravel, CodeIgniter, dan React.js, pengembangan REST API, manajemen database, serta implementasi DevOps. Berfokus pada optimalisasi sistem, efisiensi operasional, pemecahan masalah teknis, dan transformasi digital untuk mendukung kebutuhan serta pertumbuhan bisnis perusahaan.',
     educationTitle: 'Pendidikan',
     experienceTitle: 'Pengalaman',
     skillsTitle: 'Skills',
@@ -23,6 +23,7 @@ const uiCopy = {
     contactTitle: 'Kontak',
     contactText: 'Siap bantu lanjut isi foto asli, data diri, dan project nyata Anda berikutnya.',
     detail: 'Detail',
+    moreDesigns: 'Lihat desain lainnya',
     projectCategories: 'Kategori proyek',
     socialLinks: 'Link media sosial',
     previousExperience: 'Pengalaman sebelumnya',
@@ -41,10 +42,10 @@ const uiCopy = {
       projects: 'Projects',
       contact: 'Contact',
     },
-    heroRole: 'Fullstack Developer || UI/UX Designer',
+    heroRole: 'IT Specialist',
     summaryTitle: 'Summary',
     summaryText:
-      'Fullstack Developer with 3+ years of experience building scalable web applications using Laravel, CodeIgniter, and React.js. Experienced in REST API development, microservices, database design (MySQL/PostgreSQL), and DevOps practices including Docker and CI/CD. Strong in writing clean, maintainable code and collaborating in cross-functional teams.',
+      'IT Specialist with experience in managing IT operations, network infrastructure, ERP systems, and web application development. Has experience handling IT needs across 15 outlets scattered across various regions of Indonesia, including management of back-office systems, POS, local networks, CCTV, and hardware/software maintenance. Skilled in Fullstack Development using Laravel, CodeIgniter, and React.js, REST API development, database management, and DevOps implementation. Focused on system optimization, operational efficiency, technical problem-solving, and digital transformation to support business needs and growth.',
     educationTitle: 'Education',
     experienceTitle: 'Experience',
     skillsTitle: 'Skills',
@@ -53,6 +54,7 @@ const uiCopy = {
     contactTitle: 'Contact',
     contactText: 'Ready to continue with your real photos, profile data, and live project content next.',
     detail: 'Detail',
+    moreDesigns: 'View more designs',
     projectCategories: 'Project categories',
     socialLinks: 'Social media links',
     previousExperience: 'Previous experience',
@@ -74,7 +76,7 @@ const educationItems = [
     },
   },
   {
-    school: 'Akademi Komunitas Gemilang',
+    school: 'Akademi Telekomunikasi Indonesia Gemilang',
     period: { id: '2020 - 2023', en: '2020 - 2023' },
     detail: {
       id: 'Mempelajari dasar pemrograman, desain antarmuka, serta alur kerja pembuatan website dari konsep hingga rilis.',
@@ -92,6 +94,15 @@ const educationItems = [
 ]
 
 const experienceItems = [
+  {
+    company: 'Kopi Bajawa Flores NTT',
+    period: { id: 'Mei 2026 - Sekarang', en: 'May 2026 - Present' },
+    role: { id: 'IT Specialist - Fulltime', en: 'IT Specialist - Fulltime' },
+    description: {
+      id: 'Mengelola operasional IT di 15 outlet yang tersebar di Jabodetabek, Batam, Lombok, dan Medan. Bertanggung jawab atas pengelolaan sistem back-office ESB, termasuk ERP, menu, produk, promosi, dan laporan operasional. Melakukan instalasi dan pemeliharaan jaringan lokal, perangkat POS, Wi-Fi, CCTV, serta troubleshooting hardware dan software. Mengembangkan berbagai platform berbasis web, termasuk sistem IT Ticketing, reservasi meja dan venue, company profile, serta survei pelanggan untuk mendukung efisiensi operasional dan transformasi digital perusahaan.',
+      en: 'Manage IT operations across 15 outlets in Greater Jakarta, Batam, Lombok, and Medan. Responsible for managing ESB back-office systems, including ERP, menus, products, promotions, and operational reports. Perform installation and maintenance of local networks, POS devices, Wi-Fi, CCTV systems, and hardware and software troubleshooting. Develop web-based platforms, including IT ticketing systems, table and venue reservations, company profile websites, and customer survey platforms to support operational efficiency and business digital transformation.',
+    },
+  },
   {
     company: 'PT CTG Technology Development',
     period: { id: 'Februari 2026 - April 2026', en: 'February 2026 - April 2026' },
@@ -205,21 +216,26 @@ const projectTabs = {
     shortLabel: { id: 'IT', en: 'IT' },
     folder: 'Aplikasi',
     items: [
-      { title: 'Bisabola.id - Ekosistem Sepak Bola', file: 'bisabola.png', link: 'http://bisabola.id' },
-      { title: 'E-Laundry - Cuci Pakaian Modern', file: 'e-laundry.png', link: 'https://e-laundry.site' },
-      { title: 'E-Santri - Pembayaran Digital', file: 'e-santri.png', link: 'https://pembayaransantri.online' },
+      { title: 'Kopi Bajawa Flores NTT', file: 'bajawa_co_id.png', link: 'https://bajawa.co.id' },
+      { title: 'Reservasi Table Cafe', file: 'reservasi-bajawa.png', link: 'https://book.bajawa.co.id' },
+      { title: 'IT Ticketing', file: 'it-support.png', link: 'https://it.bajawa.co.id' },
+      { title: 'Mail Platform', file: 'mail-bajawa.png', link: 'https://mail.bajawa.co.id' },
       { title: 'Marc Klok Foundation - Gol Kita', file: 'marcklok.png', link: 'https://marcklokfoundation.org' },
-      { title: 'Nukang - Cari Tukang Online', file: 'nukang.png', link: 'https://nukang.pembayaransantri.online' },
       { title: 'Nusantara Sentra Kapital - Reksa Dana', file: 'nuscap.png', link: 'https://nuscap.id' },
       { title: 'PlayerDuo - Platform Main Bareng', file: 'playerduo.png', link: 'https://playerduoid.com' },
-      { title: 'Pelaporan Pelecehan Seksual - UNUSIA', file: 'ppks.png', link: 'https://ppks-unusia.online' },
+      { title: 'Bisabola.id - Ekosistem Sepak Bola', file: 'bisabola.png', link: 'http://bisabola.id' },
       { title: 'SparX - Platform Booking Lapangan', file: 'sparx.png', link: 'https://sparx.id' },
+      { title: 'E-Laundry - Cuci Pakaian Modern', file: 'e-laundry.png', link: 'https://e-laundry.site' },
+      { title: 'E-Santri - Pembayaran Digital', file: 'e-santri.png', link: 'https://pembayaransantri.online' },
+      { title: 'Nukang - Cari Tukang Online', file: 'nukang.png', link: 'https://nukang.pembayaransantri.online' },
+      { title: 'Pelaporan Pelecehan Seksual - UNUSIA', file: 'ppks.png', link: 'https://ppks-unusia.online' },
     ],
   },
   design: {
     label: { id: 'Graphic Design', en: 'Graphic Design' },
     shortLabel: { id: 'Desain', en: 'Design' },
     folder: 'Design',
+    moreLink: 'https://drive.google.com/drive/u/1/folders/1SzRj0A4RME3soP1ezcMtz0mpPF4plOHc',
     items: [
       {
         title: 'Poster Design',
@@ -713,6 +729,18 @@ function App() {
             </article>
           ))}
         </div>
+        {currentProjectTab.moreLink ? (
+          <div className="projects-more">
+            <a
+              href={currentProjectTab.moreLink}
+              className="detail-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {copy.moreDesigns}
+            </a>
+          </div>
+        ) : null}
       </section>
 
       <section className="content-section certification-section reveal-on-scroll" id="certification">
